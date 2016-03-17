@@ -1,0 +1,9 @@
+build:
+  image: index.shurenyun.com/solo:on-build
+  commands:
+    - mvn install
+publish:
+  docker:
+    email: wtzhou@dataman-inc.com
+    repo: shurenyun/solo
+    tag: $$COMMIT

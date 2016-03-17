@@ -12,6 +12,7 @@
 !.travis.yml
 !Dockerfile
 !docker-entrypoint.sh
+!.drone.yml
 
 src/main/webapp/skins/*
 !src/main/webapp/skins/mobile
