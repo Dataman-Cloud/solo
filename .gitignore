@@ -11,6 +11,7 @@
 !nb-configuration.xml
 !.travis.yml
 !Dockerfile
+!docker-entrypoint.sh
 
 src/main/webapp/skins/*
 !src/main/webapp/skins/mobile
