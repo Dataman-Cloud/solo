@@ -16,3 +16,4 @@ ADD  docker-entrypoint.sh /usr/local/sbin/docker-entrypoint.sh
 RUN  chmod a+x /usr/local/sbin/docker-entrypoint.sh
 
 ENTRYPOINT ["/usr/local/sbin/docker-entrypoint.sh"]
+CMD ["catalina.sh", "run"]
