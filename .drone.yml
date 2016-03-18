@@ -6,4 +6,5 @@ publish:
   docker:
     email: wtzhou@dataman-inc.com
     repo: shurenyun/solo
+    storage_driver: devicemapper
     tag: $$COMMIT
