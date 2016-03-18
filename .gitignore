@@ -13,6 +13,7 @@
 !Dockerfile
 !docker-entrypoint.sh
 !start-container-sample.sh
+!start.sh
 !.drone.yml
 
 src/main/webapp/skins/*
