@@ -14,7 +14,8 @@
 !docker-entrypoint.sh
 !start-container-sample.sh
 !start.sh
-!.drone.yml
+!.sryci.yaml
+!/jmx/
 
 src/main/webapp/skins/*
 !src/main/webapp/skins/mobile
