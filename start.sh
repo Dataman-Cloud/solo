@@ -2,6 +2,7 @@
 
 java -Dcom.sun.management.jmxremote \
      -Dcom.sun.management.jmxremote.port=8081 \
+     -Djava.rmi.server.hostname=${SERVER_HOST} \
      -Dcom.sun.management.jmxremote.local.only=false \
      -Dcom.sun.management.jmxremote.ssl=false \
      -Dcom.sun.management.jmxremote.authenticate=false \
