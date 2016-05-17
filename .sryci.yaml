@@ -1,5 +1,5 @@
 build:
-  image: index.shurenyun.com/solo:on-build
+  image: demoregistry.dataman-inc.com:5000/csdpub/solo:onbuild
   commands:
     - mvn install
 publish:
