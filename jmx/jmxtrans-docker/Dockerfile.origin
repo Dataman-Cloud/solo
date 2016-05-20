@@ -3,11 +3,12 @@ MAINTAINER Adam Kunicki <kunickiaj@gmail.com>
 
 RUN set -x \
   && apt-get update -qq \
+  && apt-get install -qq --no-install-recommends curl ca-certificates \
   && mkdir /opt/jmxtrans /opt/jmxtrans/conf /opt/jmxtrans/log \
+  && curl -sSL -o /opt/jmxtrans/jmxtrans-all.jar https://search.maven.org/remotecontent?filepath=org/jmxtrans/jmxtrans/254/jmxtrans-254-all.jar \
+  && apt-get remove -qq --auto-remove curl \
   && apt-get clean -qq \
   && rm -rf /var/lib/apt/lists/*
-
-COPY jmxtrans-254-local-all.jar /opt/jmxtrans/jmxtrans-all.jar
 
 VOLUME /opt/jmxtrans/conf
 COPY docker-entrypoint.sh /
